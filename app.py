@@ -10,6 +10,10 @@ mydb = mysql.connector.connect(
     database="logindb"
 )
 
+@app.route("/", methods=["GET"])
+def home():
+    return "Hello, World!!"
+
 @app.route("/genre", methods=["GET"])
 def genre():
     data = request.get_json()
