@@ -4,10 +4,11 @@ import mysql.connector
 app = Flask(__name__)
 
 mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Cbr250@HONDA",
-    database="logindb"
+    user="avnadmin",
+    password="AVNS_GfR7Y0J3xBMWVcIXRlw",
+    host="mysql-21808376-kunalkhobragade0405-5360.b.aivencloud.com",
+    port=27075,
+    database="imdb"
 )
 
 @app.route("/", methods=["GET"])
